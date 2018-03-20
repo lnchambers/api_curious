@@ -237,6 +237,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   launchy
   listen (>= 3.0.5, < 3.2)
+  omniauth
   omniauth-eve_online-sso
   pg (>= 0.18, < 2.0)
   pry

@@ -4,7 +4,22 @@ class SessionsController < ApplicationController
   end
 
   def create
+    # auth_hash = request.env['omniauth.auth']
+    encoded = Base64.encode64("#{ENV['EVE_CLIENT_ID']}:#{ENV['EVE_SECRET_KEY']}")
+    conn = Faraday.post("https://login.eveonline.com/oauth/token/?grant_type=authorization_code&code=#{params[:code]}") do |req|
+      req.headers['Authorization'] = "Basic #{encoded}"
+    end
+    conn.post
+
+    pairs = response.body.split("&")
+    response_hash = {}
+    pairs.each do |pair|
+      key, value = pair.split("=")
+      response_hash[key] = value
+    end
+
+    token = response_hash["token"]
+
     binding.pry
-    auth_hash = request.env['omniauth.auth']
   end
 end
