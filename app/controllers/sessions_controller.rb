@@ -5,8 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     auth_hash = request.env['omniauth.auth']
-    binding.pry
-    EveUser.create(auth_hash)
-    redirect_to user_dashboard_path
+    EveUser.new(auth_hash).create
+    redirect_to user_path(current_user)
   end
 end
