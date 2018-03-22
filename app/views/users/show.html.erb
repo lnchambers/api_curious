@@ -1,0 +1,7 @@
+<h1>Welcome</h1>
+<p>Characters</p>
+<% current_user.characters.each do |character| %>
+  <ul>
+    <li> <%= character.name %> </li>
+  </ul>
+<% end %>
