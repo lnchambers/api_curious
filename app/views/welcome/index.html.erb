@@ -1,5 +1,12 @@
-<h1>Welcome</h1>
-<%= link_to "Login", login_path %> with EVE Online
-<%= content_tag :button, :type => :submit, :class => :login do %>
-   <%= image_tag "https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-white-large.png"%>
-<% end %>
+<section class="welcome-main">
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/yFTUazuGdTw?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=yFTUazuGdTw" frameborder="0" allowfullscreen></iframe>
+      Login Page
+    </div>
+  </div>
+  <section class="welcome-login">
+    <h1>My Eve</h1>
+    <a href="http://localhost:3000/login"><img src="https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-white-large.png" /></a>
+  </section>
+</section>
