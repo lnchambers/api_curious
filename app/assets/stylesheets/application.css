@@ -16,6 +16,8 @@
 
  body {
    margin: 0;
+   font-family: 'Iceland', cursive;
+   font-family: 'Oswald', sans-serif;
  }
 
  .welcome-main {
@@ -85,10 +87,15 @@
  }
 
  .welcome-login h1 {
+   font-family: Iceland;
    color: white;
-   font-size: 25pt;
+   font-size: 35pt;
  }
 
  .welcome-login a {
    margin-bottom: 25px;
+ }
+
+ .main-container {
+
  }

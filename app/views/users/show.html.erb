@@ -1,8 +1,16 @@
-<h1>Welcome <%= current_user.characters.first.name %></h1>
-<%= image_tag(@image) %>
-<p>Characters</p>
-<% current_user.characters.each do |character| %>
-  <ul>
-    <li> <%= character.name %> </li>
-  </ul>
-<% end %>
+<section class="main-container">
+  <nav class="nav">
+    My Eve
+  </nav>
+  <section class="show-container">
+    <aside class="show-sidebar">
+      <h1>Welcome <%= current_user.characters.first.name %></h1>
+      <%= image_tag(@image) %>
+      <p>Wallet</p>
+      <%=  %>
+    </aside>
+    <section class="show-infobar">
+
+    </section>
+  </section>
+</section>
