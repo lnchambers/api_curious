@@ -6,7 +6,8 @@ class EveUser
   end
 
   def create
-    Character.create(
+    binding.pry
+    Character.find_or_create_by(
       id: auth_hash["info"]["character_id"],
       user: user,
       scopes: auth_hash["info"]["scopes"],
