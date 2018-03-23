@@ -16,6 +16,22 @@
 
  body {
    margin: 0;
+   font-family: 'Iceland', cursive;
+   font-family: 'Oswald', sans-serif;
+   background-color: #3f7fb4;
+ }
+
+ a {
+   color: white;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #EEE6A7;
+ }
+
+ a:active {
+   color: #9DC268
  }
 
  .welcome-main {
@@ -85,10 +101,73 @@
  }
 
  .welcome-login h1 {
+   font-family: Iceland;
    color: white;
-   font-size: 25pt;
+   font-size: 35pt;
  }
 
  .welcome-login a {
    margin-bottom: 25px;
  }
+
+ .nav {
+   font-family: Iceland;
+   min-width: 100%;
+   position: sticky;
+   top: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 45px;
+   margin: 0px;
+   background-color: #3f7fb4;
+ }
+
+ .show-container {
+   background: url("http://s1.picswalls.com/wallpapers/2014/09/18/eve-online-backgrounds_112515969_224.jpg");
+   min-height: 750px;
+   display: flex;
+   justify-content: center;
+   position: static;
+ }
+
+ .show-sidebar {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background-color: #444147;
+   min-width: 20%;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .show-infobar  {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background-color: #D0CFCF;
+   min-width: 50%;
+ }
+
+ .chuck-norris {
+   position: absolute;
+   right: -500px;
+   animation: 40s chuck-norris;
+ }
+
+ .chuck-norris-banner {
+   width: 100%;
+   background-color: #3f7fb4;
+   position: sticky;
+   top: 0px;
+   color: white;
+ }
+
+@keyframes chuck-norris {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 2500px;
+  }
+}
