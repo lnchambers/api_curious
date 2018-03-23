@@ -6,7 +6,7 @@
     <h1>Welcome <%= current_user.characters.first.name %></h1>
     <%= image_tag(@image) %>
     <p>Wallet</p>
-    <%=  %>
+    <div class="isk"><%= number_to_currency(@wallet, unit: "Ƶ") %></div>
     <p>Mail</p>
     <%=  %>
   </aside>
@@ -17,5 +17,5 @@
   </section>
 </section>
 <section class="chuck-norris-banner">
-  <p class="chuck-norris">Test</p>
+  <p class="chuck-norris"><%= @joke %></p>
 </section>
