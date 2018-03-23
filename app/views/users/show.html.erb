@@ -1,16 +1,21 @@
-<section class="main-container">
-  <nav class="nav">
-    My Eve
-  </nav>
-  <section class="show-container">
-    <aside class="show-sidebar">
-      <h1>Welcome <%= current_user.characters.first.name %></h1>
-      <%= image_tag(@image) %>
-      <p>Wallet</p>
-      <%=  %>
-    </aside>
-    <section class="show-infobar">
-
-    </section>
+<nav class="nav">
+  <%= link_to "My Eve", root_path %>
+</nav>
+<section class="show-container">
+  <aside class="show-sidebar">
+    <h1>Welcome <%= current_user.characters.first.name %></h1>
+    <%= image_tag(@image) %>
+    <p>Wallet</p>
+    <%=  %>
+    <p>Mail</p>
+    <%=  %>
+  </aside>
+  <section class="show-infobar">
+    <p>Current Ship</p>
+    <p>Current Location</p>
+    <p>
   </section>
+</section>
+<section class="chuck-norris-banner">
+  <p class="chuck-norris">Test</p>
 </section>
