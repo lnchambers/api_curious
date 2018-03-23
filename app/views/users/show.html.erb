@@ -3,7 +3,7 @@
 </nav>
 <section class="show-container">
   <aside class="show-sidebar">
-    <h1>Welcome <%= current_user.characters.first.name %></h1>
+    <h1>Welcome <%= current_user.name %></h1>
     <%= image_tag(@image) %>
     <p>Wallet</p>
     <div class="isk"><%= number_to_currency(@wallet, unit: "Ƶ") %></div>
